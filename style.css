@@ -1,0 +1,172 @@
+.memori-whole {
+margin-left: 5%;
+
+}
+
+button {
+	margin-left: 9%;
+	margin-right: 5%;
+	float: left;
+	min-width: 195px;
+    background-color: #4CAFA0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 12px;
+	box-shadow: 0 5px #004666;
+}
+
+button:hover {
+    background-color: #3e8ea1;
+
+}
+
+button:active {
+  background-color: #3e8eA1;
+  box-shadow: 0 5px #004666;
+  transform: translateY(4px);
+}
+
+.disabled-btn:hover {
+	background-color: dimgrey;
+
+}
+.disabled-btn {
+	background-color: grey;
+
+}
+
+.mem-card {
+	background-color: #3e8eA1;
+	padding: 20px;
+	width: 10%;
+	border-radius: 5px;
+}
+
+
+/* Thanks w3schools! */
+.mem-card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.mem-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+
+.card-container {
+	padding: 1px;
+	margin: 2px;
+  cursor: pointer;
+  height: 150px;
+  position: relative;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.card.flip{
+  transform: rotateY(180deg);
+}
+
+.card.shake{
+	transform: rotate(780deg)scale(0.5,0.5);
+	transition: 4.08s;
+	transition-delay: 1.95s;
+}
+
+.card.shaketwo{
+	transform: rotateY(180deg)scale(0.3,0.3);
+	transition: 4.8s;
+	transition-delay: 2s;
+}
+
+.card.shakeandflip{
+	animation: move 5s forwards;
+}
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotate(320deg)scale(0.5,0.5);
+  }
+}
+
+.card.endanimation{
+	animation: mover 30s forwards;
+	animation-delay: 0s;
+}
+@keyframes mover {
+  0% {
+    transform: rotate(320deg)scale(0.0,0.0);
+  }
+  30% {
+    transform: rotateY(180deg)scale(0.8,0.8);
+  }
+  50% {
+    transform: none;
+  }
+  65% {
+	transform: rotate(320deg)scale(0.3,0.3);
+  }
+  85% {
+    transform: none;
+  }  
+  100% {
+	transform: rotate(-320deg)scale(0.0,0.0);
+  }
+}
+
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 36px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.card-row-1{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-row-2{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+

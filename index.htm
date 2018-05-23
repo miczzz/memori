@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Memoriiiis</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"  href="style.css">
+<script type="text/javascript" src='memory.js'></script>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+<button onclick="assignImagesToCards()" id="startButton" value="Start game">Start game</button>
+<h2>Memori</h2>
+
+<p>...like memory, without the y...</p>
+
+<div class="memori-whole">
+<div class="card-row-1">
+<div class="card-container">
+  <div class="card" id="card1" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card1b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card2" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card2b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card3" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card3b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card4" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card4b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card5" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card5b"></div>
+  </div>
+</div>
+</div>
+<div class="card-row-2">
+<div class="card-container">
+  <div class="card" id="card6" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card6b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card7" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card7b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card8" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card8b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card9" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card9b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card10" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card10b"></div>
+  </div>
+</div>
+</div>
+<div class="card-row-1">
+<div class="card-container">
+  <div class="card" id="card11" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card11b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card12" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card12b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card13" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card13b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card14" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card14b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card15" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card15b"></div>
+  </div>
+</div>
+</div>
+<div class="card-row-2">
+<div class="card-container">
+  <div class="card" id="card16" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card16b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card17" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card17b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card18" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card18b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card19" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card19b"></div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card" id="card20" onclick="pickCard(id)">
+    <div class="side"><img src="images/pattern1.jpg" alt="Paggdn"></div>
+    <div class="side back"><img src="images/pattern2.jpg" alt="Paggdn" id="card20b"></div>
+  </div>
+</div>
+</div>
+</div>
+   
+  <br /><br />  <br /><br /> 
+</body>
+
+
